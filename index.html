@@ -1,27 +1,29 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Lookgram — MVP (Grátis + PRO)</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>📸 Lookgram MVP</h1>
-    <p>Compartilhe looks de moda. Arraste para cima para baixar!</p>
+    <p>Compartilhe looks de moda. Baixe suas imagens!</p>
   </header>
+
+  <main id="status" style="text-align: center; margin: 20px; font-weight: bold; color: #333;"></main>
 
   <section id="planFree" class="plan">
     <h2>Plano Grátis</h2>
-    <button onclick="triggerDownload()">Baixar Look Selecionado</button>
+    <button onclick="generateAndDownload()">Baixar Look Selecionado</button>
     <button onclick="upgrade()">Upgrade para PRO</button>
   </section>
 
   <section id="planPro" class="plan hidden">
     <h2>Plano PRO</h2>
-    <button onclick="triggerDownload()">Baixar Look Selecionado</button>
-    <button>Baixar Todos os Looks</button>
+    <button onclick="generateAndDownload()">Baixar Look Selecionado</button>
+    <button onclick="downloadAll()">Baixar Todos os Looks</button>
     <button oncontextmenu="alert('Menu contexto desenvolvedor'); return false;">Opções Extras</button>
   </section>
 
