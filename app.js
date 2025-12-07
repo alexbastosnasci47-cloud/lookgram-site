@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icon: randomIcon
         };
         
-        initialLooks.unshift(newLook); // Adiciona no início
+        initialLooks.unshift(newLook);
         renderLooks(initialLooks);
         
         // Ativar botão de download
